@@ -1,22 +1,25 @@
-/* display background color black on navbar scroll */
+/* Navbar background color on scroll */
 .navbarScroll.navbarDark {
     background-color: black;
 }
 
-/* hero background image */
+/* Hero background image */
 .bgimage {
-    height:100vh;
-    background: url('images/heroimage.jpg');
-    background-size:cover;
-    position:relative;
+    height: 100vh;
+    background: url('images/heroimage.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
 }
-/* text css above hero image*/
+
+/* Hero text styling */
 .hero_title {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
 }
+
 .hero_desc {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
+
 .hero-text {
     text-align: center;
     position: absolute;
@@ -26,52 +29,116 @@
     color: white;
 }
 
-/* spacing on all sections */
-/* #about, #services, #portfolio, #contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
-} */
-#contact {
-    padding-bottom: 4rem;
-}
-/* about section image css */
-.imageAboutPage {
-    width: 100%;
-}
-
-/* services section css */
+/* Services section card styling */
 .servicesText.card {
     height: 280px;
     cursor: pointer;
-  }
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
 .servicesIcon {
     font-size: 36px;
     text-align: center;
     width: 100%;
 }
+
 .card-title {
     text-align: center;
 }
+
 .card:hover .servicesIcon {
     color: #008000;
 }
+
 .servicesText:hover {
     border: 1px solid #008000;
 }
 
-/* social media icons styling */
+/* Social media icons styling */
 .social-icons {
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
     color: #008000;
 }
+
 .fab {
     color: #000000;
 }
-/* footer styling */
+
+/* Footer styling */
 #footer {
     background-color: #808080;
     text-align: center;
+    padding: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 2rem;
+    }
+
+    .hero_desc {
+        font-size: 1.2rem;
+    }
+
+    .servicesText.card {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .servicesIcon {
+        font-size: 28px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust sections padding for mobile */
+    #about, #services, #portfolio, #contact {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero_title {
+        font-size: 1.5rem;
+    }
+
+    .hero_desc {
+        font-size: 1rem;
+    }
+
+    /* Stack the form and map vertically in contact section */
+    #contact .row {
+        flex-direction: column;
+    }
+
+    #contact .col-lg-6 {
+        margin-bottom: 1rem;
+    }
+
+    .social-icons {
+        font-size: 24px;
+    }
+
+    #footer {
+        padding: 1.5rem 0;
+    }
+}
+
+/* Additional small adjustments */
+.imageAboutPage {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
 }

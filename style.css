@@ -6,7 +6,7 @@
 /* Hero background image */
 .bgimage {
     height: 100vh;
-    background: url('images/heroimage.jpg') no-repeat center center;
+    background: url('images/hero_image.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
 }

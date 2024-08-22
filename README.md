@@ -3,17 +3,6 @@
 
 Welcome to my personal portfolio website. This site showcases my skills, projects, and services as a Flutter Mobile App Developer and Web Developer. Below you will find information on how to navigate the site, technologies used, and how to get in touch with me.
 
-## Table of Contents
-
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Responsive Design](#responsive-design)
-- [Contact](#contact)
-- [License](#license)
-
 ## About the Project
 
 This portfolio was created to highlight my experience and capabilities as a developer. It includes sections that describe my background, the services I offer, a portfolio of my work, and a contact form for potential clients or collaborators.

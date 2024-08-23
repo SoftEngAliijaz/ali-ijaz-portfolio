@@ -72,12 +72,45 @@
     color: #000000;
 }
 
+.col-lg-8{
+    text-align: justify;
+}
+
 /* Footer styling */
 #footer {
-    background-color: #808080;
+    background-color: black;
     text-align: center;
     padding: 2rem 0;
+    content-visibility: visible;
 }
+
+/* Social media icons styling */
+.social-icons a {
+    color: white; /* Ensures icons are visible */
+    margin: 0 10px; /* Adds spacing between icons */
+    font-size: 36px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #008000; /* Hover color for icons */
+}
+
+.fab {
+    color: inherit; /* Inherits color from parent link */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .social-icons a {
+        font-size: 24px;
+    }
+
+    #footer {
+        padding: 1.5rem 0;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

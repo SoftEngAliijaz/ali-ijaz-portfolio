@@ -74,5 +74,5 @@ function onScroll(event) {
 
 /// Add your cv here and paste link 
 function downloadResume() {
-    window.open("https://drive.google.com/", "_blank");
+    window.open("", "_blank");
 }

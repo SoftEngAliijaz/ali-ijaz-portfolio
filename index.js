@@ -72,6 +72,7 @@ function onScroll(event) {
     });
 }
 
+/// Add your cv here and paste link 
 function downloadResume() {
-    window.open("https://drive.google.com/file/d/1tcI5oIvh39-5lanYLEs1Z3UJF6kUhkmB/view?usp=drive_link", "_blank");
+    window.open("https://drive.google.com/", "_blank");
 }

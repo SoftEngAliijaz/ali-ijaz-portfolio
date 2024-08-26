@@ -1,354 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>Muhammad Ali's Portfolio</title>
+
+    <!-- mobile responsiveness -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- linking css file -->
-    <link rel="stylesheet" href="style.css">
-    <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-    <!-- icon for web tab -->
-    <link rel="icon" href="images/fav_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- meta tags for link preview -->
+    <meta property="og:title" content="Muhammad Ali" />
+    <meta property="og:url" content="https://SoftEngAliijaz.github.io/" />
+
+    <title>Muhammad Ali's Portfolio</title>
+    <link rel="icon" href="images//title/favicon.png" type="image/icon type">
+
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="theme/core.css">
+    <link rel="stylesheet" href="theme/text_styles.css">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/techStack.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/exp.css">
+    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="stylesheet" href="components/currentDate.css">
+
+    <!-- Required for AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- media queries -->
+    <!-- mobile -->
+    <link rel="stylesheet" href="media/mobile/s.css">
+    <link rel="stylesheet" href="media/mobile/xs.css">
+
+    <!-- tablet -->
+    <link rel="stylesheet" href="media/tablet/m.css">
+
+    <!-- desktop -->
+    <link rel="stylesheet" href="media/desktop/ml.css">
+    <link rel="stylesheet" href="media/desktop/l.css">
+    <link rel="stylesheet" href="media/desktop/xl.css">
+    <link rel="stylesheet" href="media/desktop/xl_4k.css">
+
+    <!-- others -->
+    <link rel="stylesheet" href="media/others.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- icons -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+        rel="stylesheet">
+
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Muhammad Ali</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
 
-            </div>
+    <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
+        <button id="navbar-icon" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+            <img src="images//svgs/menu.svg" alt="">
+        </button>
+
+        <a href="#" data-aos="fade-down" data-aos-delay="200" class="navbar-brand">
+            <span id="brand">Muhammad Ali </span>/>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item navbar-action">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item navbar-action">
+                    <a href="#tech" class="nav-link">Tech</a>
+                </li>
+                <li class="nav-item navbar-action">
+                    <a href="#projects-div" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item navbar-action">
+                    <a href="#exp" class="nav-link">Experience</a>
+                </li>
+                <!-- <li class="nav-item navbar-action">
+                    <a href="#community" class="nav-link">Community</a>
+                </li> -->
+            </ul>
         </div>
     </nav>
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">Hi, it's me Muhammad Ali</h2>
-                    <p class="hero_desc">I am a Flutter Mobile App Developer</p>
-                </div>
+
+    <div id="up" class="up">
+        <i id="up-icon" class="fa fa-chevron-up"></i>
+    </div>
+
+    <div id="header-div" class="container-fluid">
+        <div class="grad-circle" id="mini-circle">
+            <a href="https://github.com/SoftEngAliijaz/" target="_blank">
+                <i id="repo-link" class="fa fa-github"></i>
+            </a>
+        </div>
+        <div class="grad-circle"></div>
+
+        <div class="tag-wrapper">
+            <div id="chip">
+                <span id="tag-label" class="label tag-title"></span>
             </div>
         </div>
-    </section>
 
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/profile_image.jpeg" class="imageAboutPage" alt="profile_image">
-                </div>
-                <div class="col-lg-8">
-                    <p>
-                        I'm Muhammad Ali, a seasoned Flutter developer with a passion for crafting high-quality,
-                        cross-platform applications. With over 2 years of experience, I've developed a wide range of
-                        applications, from complex enterprise solutions to sleek mobile apps.
-                    </p>
-                    <p>
-                        My expertise includes:
-                    </p>
-                    <ul>
-                        <li>Front-end development: Creating visually stunning and responsive UI/UX designs</li>
-                        <li>Back-end development: Building robust and scalable server-side logic</li>
-                        <li>API integrations: Seamlessly connecting applications with external services and data sources
-                        </li>
-                        <li>State management: Efficiently managing application state for smooth performance</li>
-                    </ul>
-                    <p>
-                        I'm dedicated to staying up-to-date with the latest Flutter trends, best practices, and
-                        technologies to deliver cutting-edge solutions that meet and exceed client expectations.
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: Muhammad Ali</li>
-                                <li>Age: 22</li>
-                                <li>Occupation: Mobile App Dev & Web Dev</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <!-- First Name Last Name Div -->
+        <div class="name">
+            <div class="heading1" id="first-name"></div>
+            <div class="heading1" id="last-name"></div>
+        </div>
+
+        <!-- Animated Text Div -->
+        <div class="tag">
+            <div class="trianlge-right"></div>
+            <span id="tag" class="txt-type" data-wait="1000ms"
+                data-words='["Flutter Developer", "Front-End Developer", "Back-End Developer", "Cross-Platform Application Developer"]'
+                ,>
+            </span>
+        </div>
+
+        <div id="social-handles" class="flexbox-container">
+            <div class="dash"></div>
+        </div>
+
+        <div class="chat">
+            <a href="#contact-div" class="body2" id="chat-btn">LET'S CHAT!</a>
+        </div>
+
+        <div class="container-fluid image-bg-div">
+            <div id="overall-stats" class="stats stats-div"></div>
+        </div>
+    </div>
+
+    <div class="circle" id="circle-1"></div>
+    <div class="circle" id="circle-2"></div>
+
+    <div class="space"></div>
+
+    <div id="about" class="container-fluid about">
+
+        <div class="about-text">
+            <p id="about-me-title">About Me</p>
+
+            <h1 id="about-me-heading">Hello there! My name is Muhammad Ali</h1>
+
+            <p id="about-quote">
+                “Transforming ideas into impactful digital experiences through clean code and innovative solutions.”
+            </p>
+
+            <p id="about-me-text">
+                I am a skilled <span class="rich-letters"> Flutter developer </span> with a strong passion for creating
+                high-performance, visually appealing mobile
+                applications. With a solid foundation in computer science and extensive experience in Flutter
+                development, I excel at
+                building responsive and user-friendly apps that run seamlessly across multiple platforms. I am committed
+                to
+                continuous learning and staying current with the latest industry trends, ensuring that my skills remain
+                sharp and
+                relevant. My dedication to quality and detail drives me to deliver exceptional results in every project
+                I undertake.
+            </p>
+
+            <div class="download-resume">
+                <button type="button" onclick="downloadResume()" class="btn btn-success" id="download-btn">
+                    <i class="fa fa-file-text" style="color: black; background-color: transparent;"></i>
+                    <span
+                        style="color: black; background-color: transparent; font-size: 14px; padding-left: 8px;">Download
+                        Resume</span>
+                </button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- services section-->
-    <section id="services">
-        <div class="container">
-            <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Tech Stack DIV -->
+    <div id="tech" class=" tech-stack">
+        <div class="tech-stack-detail">
+            <p id="tech-stack-title">Tech Stack</p>
+            <p id="tech-stack-text">
+                Change is inevitable, so I keep on exploring new technology,
+                learn it in a minimal possible way and then build something
+                out of it to see how well I did :)
+            </p>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p class="label-stack">Mobile development</p>
+            <div id="mobile-tech" data-aos="fade-right" data-aos-delay="200" class="tech-row"></div>
 
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-clock'></i>
-                            <h4 class="card-title mt-3">Mobile App Development</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <!-- <p class="label-stack">Web development</p>
+            <div id="web-tech" data-aos="fade-right" data-aos-delay="300" class="tech-row"></div> -->
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <p class="label-stack">Server side</p>
+            <div id="server-tech" data-aos="fade-right" data-aos-delay="400" class="tech-row"></div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p class="label-stack">Databases</p>
+            <div id="database-tech" data-aos="fade-right" data-aos-delay="500" class="tech-row"></div>
+
+            <p class="label-stack">Version controlloing & management</p>
+            <div id="vc-tech" data-aos="fade-right" data-aos-delay="600" class="tech-row"></div>
         </div>
-    </section>
 
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">YouTube Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="stack-illustration">
+            <img id="stack-illustration" src="images/svgs/stack.svg" alt="stack illustrations">
+        </div>
+    </div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Quiz App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Projects Div -->
+    <div id="projects-div" class="container-fluid projects-div">
+        <p id="tech-stack-title">Projects</p>
+        <p id="tech-stack-text" style="background-color: transparent; text-align: center;">
+            Stuff I loved working with
+        </p>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Product Landing Page</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Messaging Service</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div style="height: 50px;"></div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Twitter Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div id="projects" class="projects"></div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Blog App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
+        <div class="see-more">
+            <a target="_blank" href="https://github.com/SoftEngAliijaz/" class="body2" id="see-more-btn">See More</a>
+        </div>
 
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
+    </div>
 
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0"
-                                src="https://www.google.com/maps/embed/v1/place?q=sahiwal&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="googlemaps-html" href="https://www.embed-map.com"
-                            id="get-data-forembedmap">https://www.embed-map.com</a>
-                        <style>
-                            #embedmap-canvas img {
-                                max-width: none !important;
-                                background: none !important;
-                                font-size: inherit;
-                                font-weight: inherit;
-                            }
-                        </style>
-                    </div>
-                </div>
+    <div id="exp" class="container-fluid exp-div">
+        <p id="tech-stack-title">Experience</p>
+        <p id="tech-stack-text" style="background-color: transparent; text-align: center;">
+            Reflection of what I've been doing so far, so long.
+        </p>
 
-                <div class="col-lg-6">
-                    <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text"
-                                placeholder="Project Details"></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+    </div>
 
-                </div>
+
+    <div id="contact-div" class="container-fluid contact-div">
+        <p id="tech-stack-title">Get in touch</p>
+        <p id="tech-stack-text" style="background-color: transparent; text-align: center;">
+            Let's build something together :)
+        </p>
+
+        <div class="contact-row">
+
+            <div id="contact-info-div" class="contact-info-div">
+                <div class="line"></div>
+                <div id="social-contact-icons" class="social-contact-icons"></div>
 
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer section -->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- Social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
+    <footer class="foot">
+        <span class="body2 foot-text">Designed & Crafted by </span>
+        <span style="background-color: transparent; color: var(--primary-green); padding-left: 5px; ">
+            Muhammad Ali</span>
     </footer>
 
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/typeWriter.js"></script>
+    <script type="text/javascript" src="js/tech.js"></script>
+    <script type="text/javascript" src="js/projects.js"></script>
+    <script type="text/javascript" src="js/experience.js"></script>
+    <script type="text/javascript" src="js/community.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- JS core -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 </body>
 
